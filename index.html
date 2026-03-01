@@ -2,152 +2,189 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jean Carlo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jean Carlo Stein da Fonseca — Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio de Jean Carlo Stein da Fonseca: projetos, habilidades (técnicas e comportamentais) e contatos."
+    />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assents/favicon.ico" />
+    <link rel="apple-touch-icon" href="./assents/logo-jf.png" />
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      property="og:title"
+      content="Portfólio — Jean Carlo Stein da Fonseca"
+    />
+    <meta
+      property="og:description"
+      content="Projetos, habilidades e contatos."
+    />
+    <meta property="og:image" content="assets/og-image.jpg" />
+    <meta property="og:type" content="website" />
   </head>
   <body>
-    <header>
-      <h1>Jean Carlo</h1>
-      <nav>
-        <!-- Seção de navegação do site. -->
-        <ul>
-          <!-- Lista não ordenada para links do nosso menu. -->
-          <li><a href="#sobre-mim">Sobre mim</a></li>
+    <header class="hero">
+      <nav class="navbar" aria-label="Principal">
+        <h3 class="logo">DevPortfólio</h3>
+        <button id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+          ☰
+        </button>
+        <ul class="menu" id="menu">
+          <li><a href="#sobre">Sobre</a></li>
           <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#contato">Contato</a></li>
-          <li><a href="https://google.com.br" target="_blank">Google</a></li>
         </ul>
       </nav>
-    </header>
 
-    <section id="sobre-min">
-      <h2>Sobre mim</h2>
-      <img
-        src="https://media.licdn.com/dms/image/v2/C4D03AQEelex5LL72GA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516556160581?e=1772668800&v=beta&t=2Y4cgsvIRsHR5fqpXdXKrzI7FQSz-sbRVZfHv6AKHRU"
-        alt="Foto de Jean Carlo"
-        title="Foto de Jean Carlo"
-      />
-
-      <article>
-        <p>
-          Meu nome é Jean Carlo, tenho 24 anos e sou desenvolvedor full stack.
-          Atuo com tecnologias como React, Node.js e Python. Minha paixão é
-          criar soluções inovadoras e eficientes para problemas complexos.
+      <div class="hero-container">
+        <p class="intro">Olá, eu sou</p>
+        <h1>Jean Carlo Stein da Fonseca</h1>
+        <h2>Desenvolvedor Frontend</h2>
+        <p class="descricao">
+          Criando experiências digitais com código e design
         </p>
-      </article>
-
-      <aside>
-        <h3>Habilidades</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-        </ul>
-      </aside>
+      </div>
+    </header>
+    <section id="sobre">
+      <div class="sobre-conteudo">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-texto">
+          <p>
+            Sou um desenvolvedor frontend apaixonado por criar interfaces
+            intuitivas e responsivas. Com experiência em HTML, CSS e JavaScript,
+            estou sempre buscando aprender novas tecnologias e aprimorar minhas
+            habilidades para entregar projetos de alta qualidade.
+          </p>
+          <p>
+            tenho experiencia sobre desenvolvimento web e design responsivo.
+          </p>
+        </div>
+        <div class="sobre-dados">
+          <div>
+            <strong>5+</strong>
+            <span>Projetos concluídos</span>
+          </div>
+          <div>
+            <strong>1+</strong>
+            <span>Anos de experiência</span>
+          </div>
+          <div>
+            <strong>4+</strong>
+            <span>Tecnologias</span>
+          </div>
+        </div>
+      </div>
     </section>
-
     <section id="projetos">
       <h2>Projetos</h2>
-      <article>
-        <h3>Projeto 1: Sistema de Gerenciamento de Tarefas</h3>
-        <p>
-          Desenvolvi um sistema de gerenciamento de tarefas usando React e
-          Node.js para ajudar equipes a organizar e acompanhar suas atividades
-          diárias.
-        </p>
-      </article>
+      <div class="projetos-container">
+        <div class="projeto-card">
+          <img
+            src="./assents/todo-app.webp"
+            alt="Miniatura do projeto ToDo App com lista de tarefas"
+            width="640"
+            height="360"
+            loading="lazy"
+          />
+          <h3>ToDo App</h3>
+          <p>
+            Aplicação web responsiva para gerenciamento de tarefas com filtros.
+          </p>
+          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript</p>
+          <a href="#" target="_blank" rel="noopener">Demo</a>
+          <a href="#" target="_blank" rel="noopener">Código</a>
+        </div>
 
-      <article>
-        <h3>Projeto 2: Aplicativo de Previsão do Tempo</h3>
-        <p>
-          Criei um aplicativo de previsão do tempo utilizando APIs públicas para
-          fornecer informações meteorológicas em tempo real para os usuários.
-        </p>
-      </article>
+        <div class="projeto-card">
+          <img
+            src="./assents/weather-dashboard.webp"
+            alt="Miniatura do projeto Weather Dashboard mostrando clima e mapa"
+            width="640"
+            height="360"
+            loading="lazy"
+          />
+          <h3>Weather Dashboard</h3>
+          <p>
+            Dashboard de clima consumindo API pública, com favoritos e busca por
+            cidade.
+          </p>
+          <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, Fetch API</p>
+          <a href="#" target="_blank" rel="noopener">Demo</a>
+          <a href="#" target="_blank" rel="noopener">Código</a>
+        </div>
+      </div>
     </section>
-
     <section id="habilidades">
       <h2>Habilidades</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Habilidade</th>
-            <th>Nível de Proficiência</th>
-            <th>Descrição</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Iniciante</td>
-            <td>
-              Capaz de construir estruturas de páginas web semânticas e
-              responsivas.
-            </td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Intermediário</td>
-            <td>Experiência com flexbox, grid e animações CSS.</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Básico</td>
-            <td>
-              Desenvolvimento de scripts do lado do cliente para interações.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <p>Tecnologias e competências comportamentais que aplico no dia a dia.</p>
+
+      <div class="habilidades-lista">
+        <div class="habilidade-card">
+          <h3>HTML</h3>
+          <span>Avançado</span>
+        </div>
+        <div class="habilidade-card">
+          <h3>CSS</h3>
+          <span>Intermediário</span>
+        </div>
+        <div class="habilidade-card">
+          <h3>JavaScript</h3>
+          <span>Intermediário</span>
+        </div>
+      </div>
+
+      <h3>Habilidades Comportamentais</h3>
+      <ul class="habilidades-lista" role="list">
+        <li class="habilidade-card">
+          <h3>Comunicação</h3>
+          <span>Clareza e escuta ativa</span>
+        </li>
+        <li class="habilidade-card">
+          <h3>Trabalho em equipe</h3>
+          <span>Colaboração e empatia</span>
+        </li>
+        <li class="habilidade-card">
+          <h3>Resolução de problemas</h3>
+          <span>Pensamento analítico</span>
+        </li>
+        <li class="habilidade-card">
+          <h3>Organização</h3>
+          <span>Gestão do tempo</span>
+        </li>
+      </ul>
+    </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>
+        Entre em contato comigo para mais informações ou oportunidades de
+        colaboração.
+      </p>
+      <div class="contatos-lista">
+        <div class="contato-item">
+          <strong>E-mail</strong>
+          <span>jeancarlo@dminers.com.br</span>
+        </div>
+        <div class="contato-item">
+          <strong>Telefone</strong>
+          <span>+55 (48) 99107-6138</span>
+        </div>
+        <div class="contato-item">
+          <strong>Localização</strong>
+          <span>Criciúma, Santa Catarina, Brasil</span>
+        </div>
+      </div>
+      <div class="redes-sociais">
+        <a href="https://www.linkedin.com/in/jeancarlofonseca">LinkedIn</a>
+        <a href="https://github.com/jeancarlofonseca">GitHub</a>
+      </div>
     </section>
 
-    <footer id="contato">
-      <p>© 2026 Jean Carlo. Todos os direitos reservados.</p>
-      <section>
-        <h3>Contato</h3>
-        <p>Tem um projeto em mente? Entre em contato.</p>
-        <form action="">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required /><br />
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required /><br />
-
-          <label for="tel">Telefone:</label>
-          <input type="tel" id="tel" name="tel" /><br />
-
-          <label for="assunto">Assunto:</label>
-          <select name="assunto" id="assunto">
-            <option value="orcamento">Orçamento</option>
-            <option value="duvida">Dúvida</option>
-            <option value="outro">Outro</option></select
-          ><br />
-
-          <label for="mensagem">Mensagem:</label>
-          <textarea
-            name="mensagem"
-            id="mensagem"
-            cols="30"
-            rows="5"
-            required
-          ></textarea
-          ><br />
-
-          <input type="checkbox" name="inscricao" id="inscricao" />
-          <label for="inscricao"
-            >Desejo me inscrever para receber novidades</label
-          ><br />
-
-          <input type="submit" value="Enviar mensagem" />
-        </form>
-        <!-- <address>
-          <p>
-            Email:
-            <a href="mailto:jean.carlo@example.com">jean.carlo@example.com</a>
-          </p>
-          <p>Telefone: <a href="tel:5548999999">48 99999-9999</a></p>
-        </address> -->
-      </section>
+    <footer class="footer">
+      <p>&copy; 2026 Meu Portfólio. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
